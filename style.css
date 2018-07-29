@@ -42,5 +42,6 @@ h2 {
 .container3 {
     background-color: rgb(200, 200, 248);
     border-radius: 5px;
+    box-align: middle;
     margin: auto;  
 }
