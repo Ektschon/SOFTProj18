@@ -38,3 +38,10 @@ p {
 h2 {
     color: rgb(50, 38, 163);
 }
+
+.container3 {
+    background-color: rgb(200, 200, 248);
+    border-radius: 5px;
+    margin: auto;
+    
+}

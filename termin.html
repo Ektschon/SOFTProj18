@@ -15,7 +15,7 @@
     <link href="style.css" rel="stylesheet">
 </head>
 
-<body class="text-center">
+<body >
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <span class="navbar-brand mr-5"> Software Engineering</span>
 
@@ -41,39 +41,40 @@
         <img src="logo.png" width="90" height="40" alt="logoTHBingen">
     </nav>
 
-    
-    <div class="container mt-5">
-            <div class="input-group date col-md-8">
-                    <input type="date" class="form-control" max="3000-12-31" 
-                    min="1000-01-01" >
-                    
-            
-</div>
-        <!-- Date Picker -
-        <div class="input-group date col-md-8">
-                <input type="date" class="form-control" max="3000-12-31" 
-                min="1000-01-01" >
-                <div class="input-group-addon">
-                    <span class="glyphicon glyphicon-th"></span>
+    <div class="container3 col-md-5 mt-5">
+        <div class="row justify-content-center">
+                <div class="name col-md-6 mt-3">
+                        <h5 class="ml-0 text-left">Gesprächspartner:</h5>
+                        <input type="name" class="form-control" name="Name" placeholder="Max Mustermann">
                 </div>
-            <a href="#"><button class="mt-3 btn btn-lg btn-primary btn-block">Submit</button></a>
+                <div class="date col-md-6 mt-3">
+                        <h5 class="ml-0 text-left">Datum:</h5>
+                        <input type="date" class="form-control" max="3000-12-31" min="1000-01-01" name="Date">
+                </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="time col-md-6 mt-3">
+                <h5 class="ml-0 text-left">Startzeitpunkt:</h5>
+                <input type="time" class="form-control" name="UhrZeit" placeholder="23:59:59">
+            </div> 
+            <div class="time col-md-6 mt-3">
+                    <h5 class="ml-0 text-left">Endzeitpunkt:</h5>
+                <input type="time" class="form-control" name="UhrZeit" placeholder="23:59:59" >
+            </div> 
+        </div>
+        <div class="row justify-content-center">
+            <div class="text col-md-12 mt-3">
+                <h5 class="ml-0 text-left">Thema:</h5>
+                <input type="text" class="form-control" name="text">
+            </div> 
+        </div class"row justify-content-center">   
+            <div class="mt-3">
+                <a href="calender.html"><button class="btn btn-lg btn-primary btn-block">Termin Anfragen</button></a>
+            </div>
         </div>
     </div>
-
-    <div class="input-group date col-md-8">
-            <label >Begin voorverkoop periode</label>
-            <input type="date" name="bday" max="3000-12-31" 
-                   min="1000-01-01" class="form-control">
-                   <div class="input-group-addon">
-                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-                    </div>
-           </div>
-           <div class="form-group">
-            <label >Einde voorverkoop periode</label>
-            <input type="date" name="bday" min="1000-01-01"
-                   max="3000-12-31" class="form-control">
-           </div>-->
-    <div class="container2 fixed-bottom">
+        
+    <div class="container2 fixed-bottom text-center">
             <div class="row">
             <a class="col" href="impressum.html"><button class="btn btn-link">Impressum</button></a>
             <a class="col mt-2">© Master-WISS018</a>
