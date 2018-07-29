@@ -42,6 +42,9 @@ h2 {
 .container3 {
     background-color: rgb(200, 200, 248);
     border-radius: 5px;
-    width: 50%;
+    width: 100%;
+    max-width: 850px;
+    padding: 15px;
+    margin: auto;
    
 }
