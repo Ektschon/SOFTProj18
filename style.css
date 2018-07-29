@@ -15,12 +15,14 @@ p {
     max-width: 330px;
     padding: 15px;
     margin: auto;
+    margin-top: 6em
 }
 
 .container2 {
     width: 100%;
     height: 50px;
     background-color: grey;
+    
 }
 
 .btn-primary {
@@ -40,9 +42,18 @@ h2 {
 }
 
 .container3 {
-    background-color: rgb(200, 200, 248);
+    background-color: lightgrey;
     border-radius: 5px;
     width: 80%;
     margin: auto;
-   
+    margin-top: 6em
+}
+
+.container4{
+    margin-top: 6em;
+}
+#table1{
+    background-color: lightgrey;
+    width:1000px; 
+    height: 750px;
 }
