@@ -4,57 +4,42 @@
 <head>
     <!--[Inhalte des <head> auf Index.html bereits beschrieben]-->
     <meta charset="utf-8">
-    
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!--Informationen über Inhalt und Author (nicht notwendig aber der Vollständigkeit halber-->
     <meta name="description" content="Software Engineering">
     <meta name="author" content="Eric Silbernagel / Tobias Reißner">
-    <!--Betitelt die Registerkarte im Brwoser-->
+    
     <title>Projekt_Reißner/Silbernagel</title>
-    <!-- Hier wird auf Styleforgaben von Bootstrap hingewiesen um die genutzten Bootstrap-Elemente nutzbar zu machen -->
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Zusätzlicher verweis auf CSS von Bootstrap für den Datepicker-->
     <link rel="stylesheet" href="bootstrap-datetimepicker.min.css">
-
     <link href="style.css" rel="stylesheet">
 </head>
 
 <body >
-    <!-- Nutzung einer Bootstrap Navbar mit entsprechender Optik. Weiterhin ist sie am oberen Bildschirmrand fixiert 
-    (Sinnvoll für responsives Design)-->
+    <!--[Inhalte des <nav> auf calendar.html bereits beschrieben. Ausschließlich ein Unterschied im Active-Item]-->
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-        <!--Nutzen hier das Navbar-Brand um einen Obtisch ansprechenden "Titel/Überschrift" zu realisieren-->
         <span class="navbar-brand mr-5"> Software Engineering</span>
-        <!--Erstellung des Buttons (erscheint anstelle der navbar-items bei kleinen Devices) 
-        der das Dropdownmenü im fall eines kleinen Devices öffnet-->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <!--Etabliert die Responsivität der Navbar (Das Items unter dem Toggler zusammengefasst werden)-->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <!--navbar Items werden hier in eine Liste gepackt-->
             <ul class="navbar-nav">
-                <!--href behinhaltet link zu anderer html-Seite-->
                 <li class="nav-item"><a class="nav-link" href="calendar.html">Home </a></li>
-                <!--Active bei nav-item active um eine Farbung des nav-items zu realisieren -->
                 <li class="nav-item active"><a class="nav-link" href="termin.html">Termin Anlegen</a></li>
                 <li class="nav-item dropdown">
-                    <!--Erstellung eines Dropdown Menüs (Bootstrapbasiert) um mehrere Items platzsparend 
-                    und sinnvoll(Abhängig des Seitenkonzepts) einzufügen-->
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Optionen</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#">Terminblockaden einrichten (in arbeit)</a>
                         <a class="dropdown-item" href="#">Mitteilungseinstellungen (in arbeit</a>
-                        <!--Optische Trennung zwischen den Items mit hilfe des divider-->
-                        <div class="dropdown-divider"></div>
+                    <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="index.html">Abmelden</a>
                     </div>
                 </li>
             </ul>
         </div>
-        <!--Einbringung einer PNG(Bilddatei) als Logo mit festgelegter Größe (höhe und breite) 
-        und Alternativtext falls eine Darstellung nicht möglich ist-->
         <img src="logo.png" width="90" height="40" alt="logoTHBingen">
     </nav>
 
@@ -99,16 +84,15 @@
                 <input type="text" class="form-control" name="text" placeholder="Beratungsgespräch Software-Engineering">
             </div> 
         </div>
-          
-            <!--link mit der optik eines Bootstrap button um die Termin Anfrage optisch darzustellen und auf die "Home-Seite" zu kommen
-            Mit <form> anstatt <div> sowie php und javascript könnte ein Button erstellt werden der die Objekte im form abfragt 
-            und weitergibt(->Funktionsfähiges Termin Anlegen)-->
-            <div class="mt-3">
-                <a href="calendar.html"><button class="btn btn-lg btn-primary btn-block">Termin Anfragen</button></a>
-            </div>
-        
+        <!--link mit der Optik eines Bootstrap button um die Termin Anfrage optisch darzustellen und auf die "Home-Seite" zu kommen-->
+        <div class="mt-3">
+            <a href="calendar.html"><button class="btn btn-lg btn-primary btn-block">Termin Anfragen</button></a>
+        </div>
+        <!--Mit <form> anstatt <div> sowie php und javascript könnte ein Button erstellt werden der die Objekte im form abfragt 
+        und weitergibt(->Funktionsfähiges Termin Anlegen)-->
     </div>
-    <!--[Alles innerhalb der class="container" auf Index.html bereits beschrieben]-->
+
+    <!--[Alles innerhalb der class="container2" auf Index.html bereits beschrieben]-->
     <div class="container2 fixed-bottom text-center">
             <div class="row">
             <a class="col" href="impressum.html"><button class="btn btn-link">Impressum</button></a>

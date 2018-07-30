@@ -16,21 +16,28 @@
     <!-- Eigene CSS auf die hier verwiesen wird um html-codes schlank zu halten und dennoch zu customizen -->
     <link href="style.css" rel="stylesheet">
 </head>
-
+<!-- Durch class="text-center" werden die text-Elemente zentral ausgerichtet-->
 <body class="text-center">
+    <!--Container indem die Bestandteile des Logins zusammengefasst und somit ausgerichtet werden-->
     <div class="container">
-
-        <img class="mb-4" src="logo.png" alt="" width="150" height="75">
-
+        <!--Positioniertes TH-Logo mit definierter Größe-->
+        <img class="mb-4" src="logo.png" alt="TH-Logo" width="150" height="75">
+        <!--Positionierte Überschrift-->
         <h1 class="mb-3 font-weight-normal"> Please sign in</h1>
-
+        <!--Automatisch anvisiertes, mit Platzhalter befülltes Textfeld im Bootstrap-Design, welches für Emails gedacht ist. 
+        Zusätzlich kann es von ScreenReadern erfasst werden-->
         <label for="inputEmail" class="sr-only">Email address</label>
         <input id="inputEmail" class="form-control" placeholder="Email address" autofocus type="Email">
-
+        <!--Mit Platzhalter befülltes Textfeld im Bootstrap-Design, welches für Passwörter gedacht ist. 
+        Zusätzlich kann es von ScreenReadern erfasst werden-->
         <label for="inputPassword" class="sr-only">Password</label>
         <input id="inputPassword" class="form-control" placeholder="Password" type="Password">
-
+        
+        <!--link mit der Optik eines Bootstrap button um die Termin Anfrage optisch darzustellen und auf die "Home-Seite" zu kommen-->
         <a href="calendar.html" ><button class="mt-3 btn btn-lg btn-primary btn-block" >sign in </button></a>
+        <!--Mit <form> anstatt <div> sowie php und javascript könnte ein Login erstellt werden, der die Objekte im form abfragt, 
+        weitergibt und z.B. mit einer Datenbank abgleicht(->Funktionsfähiges Benutzername und Passwort abfragen). 
+        Weiterhin wären sofern <form> verwendet wird, in den Textfeldern auch nur bestimmte Zeichenketten z.B. eine E-Mail möglich-->
     </div>
 
     <!--Container der aus optischen Gründen (Seitenfuss) am Boden fixiert ist (auch Sinnvoll für Responsivität)-->

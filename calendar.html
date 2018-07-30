@@ -2,47 +2,63 @@
 <html>
 
 <head>
+    <!--[Inhalte des <head> auf Index.html bereits beschrieben]-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Software Engineering">
     <meta name="author" content="Eric Silbernagel / Tobias Reißner">
     <title>Projekt_Reißner/Silbernagel</title>
 
-    <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
-    <!-- Custom styles for this template -->
     <link href="style.css" rel="stylesheet">
 </head>
-
+<!--[Auf Index.html bereits beschrieben]--> 
 <body class="text-center">
+    <!-- Nutzung einer Bootstrap Navbar mit entsprechender Optik. Weiterhin ist sie am oberen Bildschirmrand fixiert 
+    (Sinnvoll für responsives Design)-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <!--Nutzen hier das Navbar-Brand um einen Obtisch ansprechenden "Titel/Überschrift" zu realisieren-->
         <span class="navbar-brand mr-5"> Software Engineering</span>
-
+        <!--Erstellung des Buttons/togglers (erscheint anstelle der navbar-items bei kleinen Devices) 
+        der das Dropdownmenü im fall eines kleinen Devices öffnet-->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-
+        <!--Etabliert die Responsivität der Navbar (Das Items unter dem Toggler zusammengefasst werden)-->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!--navbar Items werden hier in eine Liste gepackt um die gewünschte Formatierung zu realisieren-->
             <ul class="navbar-nav">
+                <!--href behinhaltet link zu anderer html-Seite-->
+                <!--Active bei nav-item active um eine Farbung des nav-items zu realisieren -->
                 <li class="nav-item active"><a class="nav-link" href="calendar.html">Home </a></li>
                 <li class="nav-item"><a class="nav-link" href="termin.html">Termin Anlegen</a></li>
+                <!--Erstellung eines Dropdown Menüs (Bootstrapbasiert) um mehrere Items platzsparend 
+                und sinnvoll(Abhängig des Seitenkonzepts) einzufügen-->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Optionen</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#">Terminblockaden einrichten (in arbeit)</a>
                         <a class="dropdown-item" href="#">Mitteilungseinstellungen (in arbeit</a>
+                        <!--Optische Trennung zwischen den Items mit hilfe des divider-->
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="index.html">Abmelden</a>
                     </div>
                 </li>
             </ul>
         </div>
+        <!--Einbringung einer PNG(Bilddatei) als Logo mit festgelegter Größe (höhe und breite) 
+        und Alternativtext falls eine Darstellung nicht möglich ist-->
         <img src="logo.png" width="90" height="40" alt="logoTHBingen">
     </nav>
-
+    <!-- Container zur einfacheren Ausrichtiung-->
     <div class="container4">
+        <!--Tabelle bewusst NICHT Responsiv gestalltet, da sich Tabellen hierfür nicht eignen und es in diesem Fall auch keinen Sinn ergibt. 
+        Navbar und container 2 sind fixiert, somit kann man auch auf Mobilen geräten jedes Kalenderfeld absuche
+        (gewisse Responsivität dennoch erhalten :P)
+        Tabelle mit Sichbaren Rändern und ID damit mann sich im CSS genau auf diese Tabelle beziehen kann-->
         <table id="table1" border >       
+            <!--fenster Größen in Prozent um gleichmäßige größen zu Realisieren-->
             <tr style="height:5%">
                 <th style="width:10%">Uhrzeit</th>    
                 <td style="width:18%">Montag</td>
@@ -82,8 +98,11 @@
                 <th>17:00</th><td></td><td></td><td></td><td></td><td></td> 
             </tr> 
         </table>
+        <!--Tabelle bzw. Kalender dient als Platzhalter. Mit Hilfe von Datenbanken, JavaScript etc. 
+        könnte auch ein interaktiver Kalender mit Verbindung zu termin.html realisiert werden-->
     </div>
-    
+
+    <!--[Alles innerhalb der class="container2" auf Index.html bereits beschrieben]-->
     <div class="container2 fixed-bottom">
             <div class="row">
             <a class="col" href="impressum.html"><button class="btn btn-link">Impressum</button></a>
@@ -91,7 +110,7 @@
             </div>
         </div>
 
-    <!--JavaScript Plugins für Bootstrap-Funktionen-->
+    <!--[Auf Index.html bereits beschrieben]-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>

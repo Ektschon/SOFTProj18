@@ -1,3 +1,5 @@
+/* im Folgenden werden Farben (background bzw. Elementfarbe) festgelegt. 
+Diese werden in den html cades die auf diese CSS Datei verweisen angewendet.*/
 body {
     background-color: white;
 }
@@ -10,6 +12,7 @@ h2 {
 p {
     color: rgb(50, 38, 163);
 }
+/* Sofern ein Punkt davor ist, werden die Formatierungsvorgaben auf eine class angewendet (in diesem Fall class="btn-link")*/
 .btn-link {
     color: rgb(128, 207, 128);
 }
@@ -19,17 +22,23 @@ p {
 .navbar-brand {
     color: white;
 }
+/* Sofern eine Raute davor ist, werden die Formatierungsvorgaben auf eine ID angewendet (in diesem Fall ID="table1")*/
 #table1{
     background-color: lightgrey; 
+    /* mit width und height wird die größe eines Elements bestimmt. Dies geht nach Pixeln (px), Prozent (%) und Anderen. 
+    Da sich diese Tabelle nicht responsiv Verhalten soll wurden pixel gewählt. 
+    Andernfalls wären % evtl. Sinnvoller gewesen.*/
     width: 1000px; 
     height: 750px;
     table-layout: fixed;
 }
 .container {
+    /* mit der Kombination aus width und max-width können maximalgrößen festgelegt werden 
+    und bei kleineren geräden dennoch das gesamte Bildschirmpotenzial genutzt werden.*/
     width: 100%;
     max-width: 330px;
-    padding: 15px;
-    margin: auto;
+    /*mit margin kann eine optische Ausrichtung abhängig von anderen Objekten, Bildschirmrand etc. realisiert werden. 
+    Zusätzlich kann die betrachtete "Richtung" festgelegt werden (left/right/top/bottom)*/
     margin-top: 8em;
 }
 .container2 {
@@ -41,11 +50,14 @@ p {
     background-color: lightgrey;
     border-radius: 5px;
     width: 80%;
+    /*margin:auto sorgt in verbindung mit col-md (im html code für die Gewünschte Formatierung des Objekts)*/
     margin: auto;
     margin-top: 8em;
     margin-bottom: 8em;
 }
 .container4{
-    margin: auto;
+    margin-top: 8em;
+}
+.container5{  
     margin-top: 8em;
 }
